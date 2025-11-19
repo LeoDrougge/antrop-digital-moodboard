@@ -68,6 +68,7 @@ export function TypewriterText({ className = '' }) {
   return (
     <div className={className}>
       {displayText}
+      <span className="typewriter-caret">|</span>
     </div>
   );
 }

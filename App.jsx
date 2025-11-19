@@ -47,7 +47,7 @@ function App() {
               <div className="bento-grid__item">
                 <IconCard icon="/assets/mechanics/agents/battery-minus.svg" />
               </div>
-              <div className="bento-grid__item--span-3">
+              <div className="bento-grid__item--span-4">
                 <Card fixedHeight>
                   <TypewriterText className="header-lg" />
                 </Card>
