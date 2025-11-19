@@ -1,0 +1,49 @@
+.bento-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px; /* g(1) */
+}
+
+.bento-grid__item--span-2 {
+  grid-column: span 2;
+}
+
+.bento-grid__item--span-3 {
+  grid-column: span 3;
+}
+
+.bento-grid__item--span-4 {
+  grid-column: span 4;
+}
+
+.bento-grid__item--row-2 {
+  grid-row: span 2;
+}
+
+.bento-grid__item--row-3 {
+  grid-row: span 3;
+}
+
+@media (max-width: 938px) {
+  .bento-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px; /* Halverat från 24px */
+  }
+
+  .bento-grid__item--span-2 {
+    grid-column: span 2;
+  }
+
+  .bento-grid__item--span-3 {
+    grid-column: span 2;
+  }
+
+  .bento-grid__item--span-4 {
+    grid-column: span 2;
+  }
+
+  .bento-grid__item--datetime-picker {
+    grid-column: span 2;
+  }
+}
+

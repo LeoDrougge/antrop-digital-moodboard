@@ -1,0 +1,30 @@
+.card {
+  padding: 24px; /* g(1) */
+  background: var(--viva_colors-viva_surface_clean);
+  border-radius: var(--radius-outside);
+  margin: 0 0 24px 0; /* g(1) bottom margin only */
+}
+
+.card--fixed-height {
+  height: 108px;
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+
+.card--bare {
+  padding: 0;
+  background: transparent;
+  border-radius: 0;
+}
+
+@media (max-width: 938px) {
+  .card {
+    padding: 12px; /* Halverat från 24px */
+  }
+}
+
+.card__title {
+  margin: 0 0 24px 0; /* g(1) */
+}
+

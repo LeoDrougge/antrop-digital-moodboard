@@ -1,0 +1,28 @@
+.agent-card {
+  padding: 24px; /* g(1) */
+  background: var(--viva_colors-viva_surface_clean);
+  border-radius: var(--radius-outside);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.agent-card__name {
+  margin-bottom: 8px;
+}
+
+.agent-card__status {
+  color: var(--viva_colors-viva_text_mute);
+  margin-bottom: 8px;
+}
+
+.agent-card__tasks {
+  color: var(--viva_colors-viva_text_mute);
+}
+
+@media (max-width: 938px) {
+  .agent-card {
+    padding: 12px; /* Halverat från 24px */
+  }
+}
+

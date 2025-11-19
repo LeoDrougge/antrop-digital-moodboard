@@ -1,0 +1,115 @@
+@font-face {
+  font-family: 'Neue Faktum';
+  src: url('/assets/Neue Faktum/NeueFaktum-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Neue Faktum';
+  src: url('/assets/Neue Faktum/NeueFaktum-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Neue Faktum';
+  src: url('/assets/Neue Faktum/NeueFaktum-SemiBold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Neue Faktum';
+  src: url('/assets/Neue Faktum/NeueFaktum-Bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Neue Faktum Extended';
+  src: url('/assets/Neue Faktum Extended/NeueFaktumExtendedTest-Regular-BF670dd13608cd5.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Neue Faktum Extended';
+  src: url('/assets/Neue Faktum Extended/NeueFaktumExtendedTest-Medium-BF670dd13604f3f.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Neue Faktum Extended';
+  src: url('/assets/Neue Faktum Extended/NeueFaktumExtendedTest-Bold-BF670dd135da2a3.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+}
+
+:root {
+  --viva_colors-viva_surface: #EBE9E7FF;
+  --viva_colors-viva_surface_clean: #FFFFFF;
+  --viva_colors-viva_midtone: #C6BFB8FF;
+  --viva_colors-viva_surface_hi: #F1F0EEFF;
+  --viva_colors-viva_surface_low: #E3DED9FF;
+  --viva_colors-viva_text: #463535FF;
+  --viva_colors-viva_text_mute: #918181FF;
+  --viva_colors-viva_accent: #FFE01AFF;
+  --viva_colors-viva_teal: #48C19DFF;
+  --radius-outside: 10px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+  background: var(--viva_colors-viva_surface);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: -0.3px;
+  color: var(--viva_colors-viva_text);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+}
+
+/* Text styles */
+.header-lg {
+  font-size: 42px;
+  line-height: 100%;
+  letter-spacing: -1.2px;
+  font-weight: 600;
+}
+
+.display {
+  font-family: 'Neue Faktum Extended', sans-serif;
+  font-size: 97px;
+  line-height: 100%;
+  letter-spacing: -3.97px;
+  font-weight: bold;
+}
+
+@media (max-width: 938px) {
+  .display {
+    font-size: 48px;
+    letter-spacing: -1.97px;
+  }
+
+  .header-lg {
+    font-size: 30px;
+  }
+}
+

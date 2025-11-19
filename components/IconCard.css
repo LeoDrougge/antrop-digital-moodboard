@@ -1,0 +1,50 @@
+.icon-card {
+  padding: 0;
+  background: var(--viva_colors-viva_surface_clean);
+  border-radius: var(--radius-outside);
+  width: 120px;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-card__icon {
+  width: 96px; /* g(4) */
+  height: 96px; /* g(4) */
+}
+
+.icon-card__lottie {
+  width: 96px; /* g(4) */
+  height: 96px; /* g(4) */
+}
+
+.icon-card__placeholder {
+  width: 96px;
+  height: 96px;
+  background: var(--viva_colors-viva_surface);
+  border-radius: var(--radius-outside);
+}
+
+@media (max-width: 938px) {
+  .icon-card {
+    width: 60px; /* Halverat från 120px */
+    height: 60px; /* Halverat från 120px */
+  }
+
+  .icon-card__icon {
+    width: 48px; /* Halverat från 96px */
+    height: 48px; /* Halverat från 96px */
+  }
+
+  .icon-card__lottie {
+    width: 48px; /* Halverat från 96px */
+    height: 48px; /* Halverat från 96px */
+  }
+
+  .icon-card__placeholder {
+    width: 48px;
+    height: 48px;
+  }
+}
+

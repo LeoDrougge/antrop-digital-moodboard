@@ -1,0 +1,14 @@
+.page {
+  margin: 0;
+  padding-left: 48px; /* MARGIN = 2 × GRID */
+  padding-right: 48px; /* MARGIN = 2 × GRID */
+  min-height: 100vh;
+}
+
+@media (max-width: 938px) {
+  .page {
+    padding-left: 24px; /* g(1) */
+    padding-right: 24px; /* g(1) */
+  }
+}
+

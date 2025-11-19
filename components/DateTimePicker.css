@@ -1,0 +1,73 @@
+.datetime-picker {
+  padding: 24px; /* g(1) */
+  background: var(--viva_colors-viva_surface_clean);
+  border-radius: var(--radius-outside);
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 48px; /* g(2) */
+}
+
+.datetime-picker__section {
+  display: flex;
+  flex-direction: column;
+  gap: 24px; /* g(1) */
+  flex: 1;
+}
+
+.datetime-picker__label {
+  color: var(--viva_colors-viva_text_mute);
+}
+
+.datetime-picker__inputs {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.datetime-picker__input {
+  padding: 0;
+  height: 48px; /* g(2) */
+  background: var(--viva_colors-viva_surface);
+  border: none;
+  border-radius: var(--radius-outside);
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  letter-spacing: inherit;
+  color: var(--viva_colors-viva_text);
+  width: 48px; /* g(2) */
+  text-align: center;
+}
+
+.datetime-picker__input--year {
+  width: 96px; /* g(4) */
+}
+
+.datetime-picker__input--active {
+  background: var(--viva_colors-viva_accent);
+}
+
+.datetime-picker__input:focus {
+  outline: none;
+}
+
+.datetime-picker__separator {
+  color: var(--viva_colors-viva_text);
+}
+
+@media (max-width: 938px) {
+  .datetime-picker {
+    padding: 12px; /* Halverat från 24px */
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 12px; /* Halverat från 24px */
+  }
+
+  .datetime-picker__section {
+    gap: 12px; /* Halverat från 24px */
+  }
+}
+

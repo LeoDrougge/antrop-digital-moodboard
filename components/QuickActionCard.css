@@ -1,0 +1,29 @@
+.quick-action-card {
+  padding: 24px; /* g(1) */
+  background: var(--viva_colors-viva_surface_clean);
+  border-radius: var(--radius-outside);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.quick-action-card__title {
+  margin-bottom: 24px; /* g(1) */
+}
+
+.quick-action-card__list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.quick-action-card__item {
+  color: var(--viva_colors-viva_text);
+}
+
+@media (max-width: 938px) {
+  .quick-action-card {
+    padding: 12px; /* Halverat från 24px */
+  }
+}
+

@@ -1,0 +1,40 @@
+.activity-card {
+  padding: 24px; /* g(1) */
+  background: var(--viva_colors-viva_surface_clean);
+  border-radius: var(--radius-outside);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.activity-card__title {
+  margin-bottom: 24px; /* g(1) */
+}
+
+.activity-card__list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px; /* g(1) */
+}
+
+.activity-card__item {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.activity-card__time {
+  color: var(--viva_colors-viva_text_mute);
+  font-size: 14px;
+}
+
+.activity-card__text {
+  color: var(--viva_colors-viva_text);
+}
+
+@media (max-width: 938px) {
+  .activity-card {
+    padding: 12px; /* Halverat från 24px */
+  }
+}
+
