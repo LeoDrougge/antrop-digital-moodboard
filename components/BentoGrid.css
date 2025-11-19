@@ -24,6 +24,10 @@
   grid-row: span 3;
 }
 
+.bento-grid__item--new-row {
+  grid-column-start: 1;
+}
+
 @media (max-width: 938px) {
   .bento-grid {
     grid-template-columns: repeat(2, 1fr);

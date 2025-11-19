@@ -9,6 +9,7 @@ import { ConnectionCard } from './components/ConnectionCard.jsx';
 import { TaskCard } from './components/TaskCard.jsx';
 import { TypewriterText } from './components/TypewriterText.jsx';
 import { DisplayTextWithIcons } from './components/DisplayTextWithIcons.jsx';
+import { ColorSwatch } from './components/ColorSwatch.jsx';
 import './App.css';
 
 function App() {
@@ -26,7 +27,6 @@ function App() {
 
           <section className="app__bento">
             <BentoGrid>
-           
               <div className="bento-grid__item--span-4">
                 <Card bare>
                   <DisplayTextWithIcons />
@@ -88,7 +88,31 @@ function App() {
                   value="< 1 min"
                 />
               </div>
-              
+              <div className="bento-grid__item bento-grid__item--new-row">
+                <ColorSwatch 
+                  color="var(--viva_colors-viva_accent)" 
+                  hexCode="#FFE01A"
+                />
+              </div>
+              <div className="bento-grid__item">
+                <ColorSwatch 
+                  color="var(--viva_colors-viva_teal)" 
+                  hexCode="#48C19D"
+                />
+              </div>
+              <div className="bento-grid__item">
+                <ColorSwatch 
+                  color="var(--viva_colors-viva_blue)" 
+                  hexCode="#4A90E2"
+                />
+              </div>
+              <div className="bento-grid__item">
+                <ColorSwatch 
+                  color="var(--viva_colors-viva_text)" 
+                  hexCode="#463535"
+                  textColor="#FFFFFF"
+                />
+              </div>
          
             </BentoGrid>
           </section>
