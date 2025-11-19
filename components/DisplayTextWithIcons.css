@@ -47,7 +47,7 @@
   line-height: 1;
 }
 
-@media (max-width: 938px) {
+@media (max-width: 650px) {
   .display-text-with-icons {
     gap: 0 12px;
   }

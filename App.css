@@ -23,6 +23,10 @@
 
 .app__title {
   margin: 0;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: -0.3px;
+  font-weight: normal;
 }
 
 .app__subheader {

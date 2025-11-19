@@ -1,10 +1,7 @@
 import { Page } from './components/Page.jsx';
 import { GridOverlay } from './components/GridOverlay.jsx';
 import { BentoGrid } from './components/BentoGrid.jsx';
-import { AgentCard } from './components/AgentCard.jsx';
 import { MetricCard } from './components/MetricCard.jsx';
-import { ActivityCard } from './components/ActivityCard.jsx';
-import { QuickActionCard } from './components/QuickActionCard.jsx';
 import { DateTimePicker } from './components/DateTimePicker.jsx';
 import { Card } from './components/Card.jsx';
 import { IconCard } from './components/IconCard.jsx';
@@ -15,20 +12,6 @@ import { DisplayTextWithIcons } from './components/DisplayTextWithIcons.jsx';
 import './App.css';
 
 function App() {
-  const activities = [
-    { time: '2 min ago', text: 'Luna just finished analyzing your campaign performance across digital and physical touchpoints' },
-    { time: '15 min ago', text: 'Milo started optimizing your email sequences for better engagement' },
-    { time: '1 hour ago', text: 'Nova completed a cross-channel customer journey mapping' },
-    { time: '2 hours ago', text: 'Welcome! Your new agent Atlas is ready to help with content creation' },
-  ];
-
-  const quickActions = [
-    'Create campaign',
-    'Analyze customer journey',
-    'Generate content ideas',
-    'Schedule social posts',
-  ];
-
   return (
     <>
       <GridOverlay />
@@ -87,31 +70,11 @@ function App() {
               <div className="bento-grid__item">
                 <IconCard icon="/assets/animations/cogwheel.json" />
               </div>
-              <div className="bento-grid__item--span-2">
-                <AgentCard 
-                  name="Milo" 
-                  status="active" 
-                  tasks={3}
-                />
-              </div>
               <div className="bento-grid__item">
                 <IconCard icon="/assets/mechanics/agents/battery-plus.svg" />
               </div>
-              <div className="bento-grid__item--span-2">
-                <AgentCard 
-                  name="Nova" 
-                  status="active" 
-                  tasks={7}
-                />
-              </div>
               <div className="bento-grid__item">
                 <IconCard icon="/assets/animations/idea.json" />
-              </div>
-              <div className="bento-grid__item--span-2 bento-grid__item--row-2">
-                <ActivityCard activities={activities} />
-              </div>
-              <div className="bento-grid__item--span-2">
-                <QuickActionCard actions={quickActions} />
               </div>
               <div className="bento-grid__item">
                 <MetricCard 

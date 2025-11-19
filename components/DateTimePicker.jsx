@@ -20,7 +20,6 @@ export function DateTimePicker() {
             onBlur={() => setActiveField(null)}
             maxLength={2}
           />
-          <span className="datetime-picker__separator">/</span>
           <input
             type="text"
             className={`datetime-picker__input ${activeField === 'month' ? 'datetime-picker__input--active' : ''}`}
@@ -30,7 +29,6 @@ export function DateTimePicker() {
             onBlur={() => setActiveField(null)}
             maxLength={2}
           />
-          <span className="datetime-picker__separator">/</span>
           <input
             type="text"
             className={`datetime-picker__input datetime-picker__input--year ${activeField === 'year' ? 'datetime-picker__input--active' : ''}`}

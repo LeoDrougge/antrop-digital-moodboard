@@ -102,12 +102,14 @@ h1, h2, h3, h4, h5, h6, p {
   font-weight: bold;
 }
 
-@media (max-width: 938px) {
+@media (max-width: 650px) {
   .display {
     font-size: 48px;
     letter-spacing: -1.97px;
   }
+}
 
+@media (max-width: 938px) {
   .header-lg {
     font-size: 30px;
   }
