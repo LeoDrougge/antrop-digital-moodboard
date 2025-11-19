@@ -3,9 +3,18 @@ import './ConnectionCard.css';
 
 export function ConnectionCard({ name, logo, connected: initialConnected = false }) {
   const [connected, setConnected] = useState(initialConnected);
+  const [justActivated, setJustActivated] = useState(false);
 
   const handleToggle = () => {
+    const wasInactive = !connected;
     setConnected(!connected);
+    
+    if (wasInactive) {
+      setJustActivated(true);
+      setTimeout(() => {
+        setJustActivated(false);
+      }, 600);
+    }
   };
 
   return (
@@ -13,7 +22,7 @@ export function ConnectionCard({ name, logo, connected: initialConnected = false
       <img src={logo} alt="" className="connection-card__logo" />
       <div className="connection-card__content">
         <div className="connection-card__name">{name}</div>
-        <div className="connection-card__status">
+        <div className={`connection-card__status ${justActivated ? 'connection-card__status--flash' : ''}`}>
           {connected ? 'Connected' : 'Not connected'}
         </div>
       </div>

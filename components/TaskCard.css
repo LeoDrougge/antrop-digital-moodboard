@@ -2,7 +2,7 @@
   padding: 24px; /* g(1) */
   background: var(--viva_colors-viva_surface_clean);
   border-radius: var(--radius-outside);
-  min-height: 125px;
+  min-height: 118px;
   display: flex;
   align-items: flex-start;
   gap: 24px; /* g(1) */
@@ -89,9 +89,13 @@
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
-  transition: background 0.1s;
+  transition: background 0.1s, transform 0.1s;
   align-self: flex-end;
   margin-top: auto;
+}
+
+.task-card__button:hover {
+  transform: scale(0.98);
 }
 
 .task-card__button-inner {

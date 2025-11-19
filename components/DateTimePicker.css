@@ -13,7 +13,7 @@
 .datetime-picker__section {
   display: flex;
   flex-direction: column;
-  gap: 24px; /* g(1) */
+  gap: 4px;
   flex: 1;
 }
 
@@ -40,6 +40,13 @@
   color: var(--viva_colors-viva_text);
   width: 48px; /* g(2) */
   text-align: center;
+  transition: transform 0.1s;
+  cursor: pointer;
+  caret-color: var(--viva_colors-viva_teal);
+}
+
+.datetime-picker__input:hover {
+  transform: scale(0.98);
 }
 
 .datetime-picker__input--year {

@@ -26,12 +26,54 @@
   color: var(--viva_colors-viva_text_mute);
 }
 
+.connection-card__status--flash {
+  animation: lampFlash 0.6s ease-out;
+}
+
+@keyframes lampFlash {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  20% {
+    opacity: 0.3;
+  }
+  30% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 0.7;
+  }
+  70% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0.9;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 .connection-card__slider {
   padding: 0;
   border: none;
   background: transparent;
   cursor: pointer;
   flex-shrink: 0;
+  transition: transform 0.1s;
+}
+
+.connection-card__slider:hover {
+  transform: scale(0.98);
 }
 
 .connection-card__slider-track {
