@@ -38,6 +38,12 @@ function App() {
               <div className="bento-grid__item">
                 <IconCard icon="/assets/animations/time.json" />
               </div>
+              <div className="bento-grid__item">
+                <MetricCard 
+                  label="Response Time" 
+                  value="< 1 min"
+                />
+              </div>
               <div className="bento-grid__item--span-2 bento-grid__item--datetime-picker">
                 <DateTimePicker />
               </div>
@@ -82,12 +88,7 @@ function App() {
                   value="4.2%"
                 />
               </div>
-              <div className="bento-grid__item">
-                <MetricCard 
-                  label="Response Time" 
-                  value="< 1 min"
-                />
-              </div>
+            
               <div className="bento-grid__item bento-grid__item--new-row">
                 <ColorSwatch 
                   color="var(--viva_colors-viva_accent)" 

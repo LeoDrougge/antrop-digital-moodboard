@@ -3,6 +3,8 @@
   padding-left: 48px; /* MARGIN = 2 × GRID */
   padding-right: 48px; /* MARGIN = 2 × GRID */
   min-height: 100vh;
+  position: relative;
+  z-index: 1;
 }
 
 @media (max-width: 938px) {
